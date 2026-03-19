@@ -33,14 +33,10 @@ pip install -r requirements.txt
 python gui.py
 ```
 
-### Option 2: Build a standalone .exe
+### Option 2: Download the release
 
-```bash
-pip install pyinstaller
-python build.py
-```
+-Go to releases, and download the latest executable file from there.
 
-This creates `PrivacyMonitor.exe` in the project root and automatically cleans up all build artifacts (`build/`, `dist/`, `.spec`).
 
 ## Usage
 
@@ -101,7 +97,6 @@ privacy-monitor/
 ├── logger.py        # Thread-safe log file read/write/purge
 ├── filters.py       # Per-app enable/disable filter persistence
 ├── startup.py       # Windows auto-start registry management
-├── build.py         # PyInstaller build script with artifact cleanup
 ├── requirements.txt # Python dependencies
 └── README.md
 ```
